@@ -11,4 +11,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+# Setup rvm
+# source $HOME/.rvm/scripts/rvm
+#
+# # Customize to your needs...
+export EDITOR="vim"
+bindkey -v
+
+# vi style incremental search
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
+
+PATH=$HOME/local/bin:$PATH
+PATH=$PATH:$HOME/tools/jdk1.7.0_21/bin
+PATH=$PATH:$HOME/tools/scala-2.10.1/bin
+PATH=$PATH:$HOME/tools/sbt/bin
+
 
